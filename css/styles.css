@@ -1,0 +1,347 @@
+*{
+    margin:0 ;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:  'Lato', sans-serif;
+    list-style: none;
+
+}
+/*home*/
+
+header {
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E0B16;
+    transition: all .50s ease ;
+}
+.fixed-top{
+    height: 15%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+}
+
+.contenedor-contacto{
+    border-radius: 5%;
+    border: solid #00FF88;
+    background-color: #0E0B16;
+    height: 33%;
+    width: 12%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin: 70px ;
+
+}
+.contenedor-contacto:hover {
+    background-color: #660F8D;
+}
+
+.boton-contacto {
+    margin: 70px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #00FF88 ;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px 0;
+    margin: 0 30px;
+    color: #00FF88 ;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #660F8D;
+    font-weight: 600;
+}
+
+.navbar a.active{
+    color: #660F8D;
+    font-weight: 800;
+}
+.navbar-togler{
+    border: #00FF88;
+}
+
+
+main #presentacion { 
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100%;
+    background-color: #0E0B16;
+}
+
+.txt-presentacion{
+margin-left: 20%;
+width: 100%;
+
+}
+.h1-presentacion{
+font-size:  70px;
+color: #660F8D;
+font-weight: 900;
+}
+
+.h2-presentacion {
+    font-size: 30px;
+    color: #00FF88;
+    font-weight: 500;
+}
+
+.img-presentacion {
+    display: flex;
+    height: 97%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+main #banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px ;
+    background-image:url(../imagenes/banner.png);
+    background-size: auto;
+}
+
+.contenedor-boton-banner{ 
+    border-radius: 5%;
+    border: solid #00FF88;
+    background-color: #0E0B16;
+    height: 15%;
+    width: 12%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin: 70px ;
+
+
+}
+
+main #trabajos-destacados{ 
+    width: 100%;
+    height: 100vh;
+    background-color: #0E0B16;
+    display: grid;
+    align-content: space-evenly;
+}
+
+h1.proyectos_destacados{ 
+    font-size: 30px;
+    color: #660F8D;
+    margin-left: 70px;
+    margin-top: 80px;
+} 
+.img_proyectos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.contenedor-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.boton-vermas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #660F8D;
+    background-color: #00FF88;
+    border-radius: 5%;
+    height: 30px;
+    width: 200px;
+}
+.boton-vermas a{
+    text-decoration: none;
+    color: #660F8D;
+}
+footer {
+    height: 200px;
+    width: 100%;
+    background: rgb(14,11,22);
+    background: linear-gradient(180deg, rgba(14,11,22,1) 12%, rgba(115,16,158,1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+.telefono{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    width: 40%;
+
+}
+h4.num-tel{
+    color: #00FF88;
+    font-size: 16px;
+}
+
+.iconos{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-footer{
+    width: 30px;
+    height: 30px;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.input {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #00FF88;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #00FF88;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+    background-color: #0E0B16;
+}
+
+.input:focus, .input:focus-visible {
+    border-color: #0E0B16;
+    outline: none;
+}
+
+
+/*seccion servicio*/
+
+#main-servicios{
+    width: 100%;
+    height: 120vh;
+    background-color: #0E0B16;
+
+
+}
+.contenedor-mayor-icons{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.contenedor-icon-serv{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.icon-servicios{
+    text-align: center;
+}
+
+.h3-servicios{
+    color: #00FF88;
+    margin-top: 10px;
+}
+
+.p-serv{
+    color: white;
+    max-width: 200px;
+    margin-top: 10px;
+}
+@media (max-width: 870px){
+    .navbar a {
+        font-size: 0.8rem;}
+    .boton-contacto{
+        font-size: 0.9rem;}
+    .h1 {
+        font-size: 55px;}
+    h2{
+        font-size: 20px;
+    }
+    main #trabajos-destacados{
+        height: 250vh;
+    }
+    .img_proyectos{
+        flex-direction: column;}
+    .telefono{
+        width: 55%;
+    }
+        .num-tel{
+        font-size: 15px;
+    }
+    h1.proyectos_destacados{
+        font-size: 25px;
+    }
+    .p-serv{
+        font-size: 0.8rem;
+        max-width: 180px;
+    }
+    .h3-servicios{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px){
+    header{
+        display: block;
+    }
+    .contenedor-icon-serv{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-servicios{
+        height: 160vh;
+    }
+    h4.num-tel{
+        font-size: 10px;
+    }
+    .contenedor-contacto{
+        height: 10%;
+        width: 100px;
+    }
+}
+
