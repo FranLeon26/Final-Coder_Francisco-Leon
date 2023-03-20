@@ -8,7 +8,7 @@
 }
 /*home*/
 
-header {
+header .desktop {
     height: 15%;
     width: 100%;
     position: fixed;
@@ -22,7 +22,7 @@ header {
     transition: all .50s ease ;
 }
 .fixed-top{
-    height: 15%;
+    height: 12%;
 }
 .logo {
     display: flex;
@@ -36,7 +36,9 @@ header {
     background-color: #0E0B16;
     height: 33%;
     width: 14%;
-    
+    display: flex;
+    justify-content: center ;
+    align-items: center;
     margin: 70px ;
 
 }
@@ -53,6 +55,31 @@ header {
 }
 a{
     text-decoration: none;
+}
+.navbar-desktop {
+    display: flex;
+}
+.navbar-desktop a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px 0;
+    margin: 0 30px;
+    color: #00FF88 ;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.navbar-desktop a:hover {
+    color: #660F8D;
+    font-weight: 600;
+}
+
+.navbar-desktop a.active{
+    color: #660F8D;
+    font-weight: 800;
+}
+.navbar-togler{
+    border: #00FF88;
 }
 .navbar {
     display: flex;
@@ -79,8 +106,6 @@ a{
 .navbar-togler{
     border: #00FF88;
 }
-
-
 main #presentacion { 
     display: grid;
     align-items: center;
@@ -150,6 +175,7 @@ h1.proyectos_destacados{
     color: #660F8D;
     margin-left: 70px;
     margin-top: 80px;
+    font-weight:700;
 } 
 .img_proyectos{
     display: flex;
@@ -216,6 +242,7 @@ h4.num-tel{
 .input-group {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 70px;
 }
 
@@ -290,6 +317,46 @@ h4.num-tel{
     max-width: 200px;
     margin-top: 10px;
 }
+
+/*seccion contacto*/
+.main-contacto{
+    width: 100%;
+    height: 100vh;
+    background-color: #0E0B16;
+}
+
+
+a .nav-link active{
+    color:#660F8D;
+}
+
+.navbar {
+    background-color: #0E0B16;
+    display: none;
+}
+
+nav #mobile{
+    background-color: #00FF88;
+}
+.navbar-toggler{
+    color: transparent;
+    background-color: #660F8D;
+}
+.offcanvas{
+    background-color: #0e0b16c2;
+}
+
+
+
+
+
+
+@media (max-width: 927px){
+    .desktop a{
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 870px){
     .navbar a {
         font-size: 0.8rem;}
@@ -322,10 +389,14 @@ h4.num-tel{
         font-size: 1rem;
     }
 }
-
+@media (max-width: 660px){
+    .desktop a{
+        font-size: 0.7rem;
+    }
+}
 @media (max-width: 640px){
     header{
-        display: block;
+        display: none;
     }
     .contenedor-icon-serv{
         display: flex;
@@ -341,22 +412,7 @@ h4.num-tel{
         height: 10%;
         width: 100px;
     }
-}
-
-.main-contacto{
-    width: 100%;
-    height: 100vh;
-    background-color: #0E0B16;
-}
-.container-fluid {
-    background-color: #0E0B16;
-    margin: 0;
-    padding: 0%;
-}
-nav .navbar navbar-expand-lg bg-body-tertiary{
-
-    background-color: #0E0B16;
-}
-a .nav-link active{
-    color:#660F8D;
+    .navbar{
+        display: block;
+    }
 }
