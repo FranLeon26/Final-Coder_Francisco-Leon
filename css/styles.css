@@ -317,21 +317,151 @@ h4.num-tel{
     max-width: 200px;
     margin-top: 10px;
 }
-
+/*seccion sobre mi*/
+.main-sobremi{
+    height: 150vh;
+    background-color: #0E0B16;
+    
+}
+.sobremi-presentacion{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.txt-presentacion-sobremi{
+    margin-left: 70px;
+    margin-top: 30px;
+    max-width: 600px;
+    color: white;
+}
+.educacion-habilidades{
+    height: 100vh;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.educacion{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.habilidades{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-mayor-skils{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+}
+h1.titulos-sobremi{ 
+    font-size: 30px;
+    color: #660F8D;
+    font-weight:700;
+    margin-top: 30px;
+}
+h3.años{
+    color: #00FF88;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+p.colegio{
+    color: white;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
 /*seccion contacto*/
 .main-contacto{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: #0E0B16;
 }
+h1.t-contacto{ 
+    font-size: 30px;
+    color: #660F8D;
+    margin-left: 70px;
+    margin-top: 110px;
+    font-weight:700;
+} 
+.formulario{
+    height: 150vh;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+    margin-top: 40px;
+}
+.boton-enviar{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    margin-top: 20px;
 
+
+}
+button {
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #00FF88;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    max-width: 150px;
+    display: flex;
+    
+
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+
+   .campo{
+    width: 40%;
+   }
+  
+   .form{
+    display: flex;
+    flex-direction: column;
+   }
+   .label{
+    color: #00FF88;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+   }
 
 a .nav-link active{
     color:#660F8D;
 }
 
-.navbar {
-    background-color: #0E0B16;
+.navbar  {
+     background-color: #0E0B16 !important;
     display: none;
 }
 
@@ -398,21 +528,41 @@ nav #mobile{
     header{
         display: none;
     }
+    main #banner{
+        background-image: url(../imagenes/banner_ajuste-mobile-01.png);
+    }
+    main #trabajos-destacados{
+        height: 200vh;
+    }
+    .contenedor-mayor-icons{
+        height: 215vh;
+    }
     .contenedor-icon-serv{
         display: flex;
         flex-direction: column;
+        height: 210vh;
+        justify-content: space-around;
     }
     #main-servicios{
-        height: 160vh;
+        height: 220vh;
     }
     h4.num-tel{
         font-size: 10px;
     }
     .contenedor-contacto{
-        height: 10%;
+        height: 8%;
         width: 100px;
+        margin-left: 4%;
     }
     .navbar{
         display: block;
+    }
+    .contenedor-boton-banner{
+        width: 30%;
+    }
+
+    footer{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 }
