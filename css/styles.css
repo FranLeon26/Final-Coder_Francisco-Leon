@@ -9,6 +9,11 @@
 
 /*variables*/
 /*home*/
+body {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 header .desktop {
   height: 15%;
   width: 100%;
@@ -75,16 +80,17 @@ header .desktop .contenedor-contacto .boton-contacto:hover {
 .navbar {
   display: flex;
 }
-.navbar .fixed-top {
+.navbar .container-fluid .fixed-top {
   height: 12%;
 }
-.navbar a {
+.navbar .container-fluid a {
   text-decoration: none;
 }
-.navbar .navbar-togler {
-  border: #000000;
+.navbar .container-fluid .navbar-togler {
+  border: #00FF88;
+  margin-right: 45px;
 }
-.navbar a {
+.navbar .container-fluid .offcanvas .offcanvas-body .justify-content-end .nav-item .nav-link {
   font-size: 1.1rem;
   font-weight: 400;
   padding: 5px 0;
@@ -93,11 +99,44 @@ header .desktop .contenedor-contacto .boton-contacto:hover {
   transition: all 0.5s ease;
   text-decoration: none;
 }
-.navbar a:hover {
+.navbar .container-fluid .offcanvas .offcanvas-body .contenedor-contacto {
+  border-radius: 5%;
+  border: solid #00FF88;
+  background-color: #0E0B16;
+  height: 10%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+.navbar .container-fluid .offcanvas .offcanvas-body .contenedor-contacto:hover {
+  background-color: #660F8D;
+}
+.navbar .container-fluid .offcanvas .offcanvas-body .contenedor-contacto .boton-contacto {
+  margin: 70px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #00FF88;
+  text-decoration: none;
+}
+.navbar .container-fluid .offcanvas .offcanvas-body .contenedor-contacto .boton-contacto:hover {
+  color: #00FF88;
+}
+.navbar .container-fluid a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 5px 0;
+  margin: 0 30px;
+  color: #00FF88;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.navbar .container-fluid a:hover {
   color: #660F8D;
   font-weight: 600;
 }
-.navbar a a.active {
+.navbar .container-fluid a a.active {
   color: #660F8D;
   font-weight: 800;
 }
@@ -172,7 +211,7 @@ main #banner .contenedor-boton-banner {
   border: solid #00FF88;
   background-color: #0E0B16;
   height: 15%;
-  width: 12%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,14 +293,18 @@ footer .telefono h4.num-tel {
   font-size: 16px;
 }
 footer .telefono .icon-footer {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 footer .iconos {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+footer .iconos .icon-footer {
+  width: 30px;
+  height: 30px;
 }
 footer .input-group {
   display: flex;
@@ -341,7 +384,7 @@ footer .input-group .button--submit:hover {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .main-sobremi .sobremi-presentacion .proyectos_destacados {
   font-size: 30px;
@@ -352,6 +395,7 @@ footer .input-group .button--submit:hover {
 }
 .main-sobremi .sobremi-presentacion .txt-presentacion-sobremi {
   margin-left: 70px;
+  margin-right: 70px;
   margin-top: 30px;
   max-width: 600px;
   color: white;
@@ -411,14 +455,9 @@ footer .input-group .button--submit:hover {
 .main-contacto {
   display: grid;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   background-color: #0E0B16;
   overflow: auto;
-}
-.main-contacto p {
-  color: #fff;
-  max-width: 300px;
-  margin-right: 70px;
 }
 .main-contacto .t-contacto {
   font-size: 30px;
@@ -427,38 +466,60 @@ footer .input-group .button--submit:hover {
   margin-top: 110px;
   font-weight: 700;
 }
-.main-contacto .formulario {
-  height: 150vh;
+.main-contacto .contenedor-flex {
+  display: flex;
+  margin-top: 30px;
+}
+.main-contacto .contenedor-flex p {
+  color: #fff;
+  max-width: 420px;
+  margin-left: 70px;
+  font-size: 1.2rem;
+}
+.main-contacto .contenedor-flex .formulario {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 600px;
-  margin-top: 40px;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 500px;
 }
-.main-contacto .formulario .form {
+.main-contacto .contenedor-flex .formulario .form {
   display: flex;
   flex-direction: column;
 }
-.main-contacto .formulario .form .label {
-  color: #00FF88;
+.main-contacto .contenedor-flex .formulario .form input.campo {
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #660F8D;
+  opacity: 0.5;
+  border-color: #0E0B16;
+  color: white;
   font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
+  padding-left: 15px;
 }
-.main-contacto .formulario .form input.campo {
-  width: 40%;
+.main-contacto .contenedor-flex .formulario .form textarea.campo {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #660F8D;
+  opacity: 0.5;
+  border-color: #0E0B16;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 15px;
 }
-.main-contacto .formulario .form textarea.campo {
-  width: 40%;
-}
-.main-contacto .formulario .boton-enviar {
+.main-contacto .contenedor-flex .formulario .boton-enviar {
   display: flex;
   justify-content: flex-end;
-  width: 40%;
+  width: 630px;
   margin-top: 20px;
 }
-.main-contacto .formulario .boton-enviar button {
+.main-contacto .contenedor-flex .formulario .boton-enviar button {
   padding: 17px 40px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 0;
   background-color: #00FF88;
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
@@ -469,7 +530,7 @@ footer .input-group .button--submit:hover {
   max-width: 150px;
   display: flex;
 }
-.main-contacto .formulario .boton-enviar button:hover {
+.main-contacto .contenedor-flex .formulario .boton-enviar button:hover {
   letter-spacing: 3px;
   background-color: #660F8D;
   color: #00FF88;
@@ -602,6 +663,12 @@ h5.titulos-de-proyectos {
   }
 }
 @media (max-width: 870px) {
+  header {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
   .navbar a {
     font-size: 0.8rem;
   }
@@ -656,6 +723,28 @@ h5.titulos-de-proyectos {
     display: flex;
     flex-direction: column;
   }
+  .main-contacto .contenedor-flex .formulario .form {
+    margin-right: 70px;
+  }
+  .main-contacto .contenedor-flex p {
+    font-size: 1rem;
+  }
+  .main-contacto .contenedor-flex .formulario .form input.campo {
+    width: 300px;
+    height: 70px;
+    font-size: 1.2rem;
+  }
+  .main-contacto .contenedor-flex .formulario .form textarea.campo {
+    width: 300px;
+    height: 200px;
+    font-size: 1.2rem;
+  }
+  .main-contacto .contenedor-flex .formulario .boton-enviar {
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 660px) {
   .desktop a {
@@ -667,6 +756,28 @@ h5.titulos-de-proyectos {
   .formulario {
     margin-left: 70px;
     overflow: hidden;
+  }
+  .contenedor-flex {
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-flex .formulario {
+    margin-top: 40px;
+  }
+  .main-contacto .contenedor-flex p {
+    max-width: 410px;
+  }
+  .main-contacto .contenedor-flex .formulario .form input.campo {
+    width: 350px;
+    height: 70px;
+    font-size: 1.2rem;
+  }
+  .main-contacto .contenedor-flex .formulario .form textarea.campo {
+    width: 350px;
+    height: 200px;
+    font-size: 1.2rem;
+  }
+  .main-contacto .contenedor-flex .formulario .boton-enviar {
+    width: 300px;
   }
 }
 @media (max-width: 640px) {
@@ -682,7 +793,7 @@ h5.titulos-de-proyectos {
   .contenedor-mayor-icons {
     height: 215vh;
   }
-  .contenedor-icon-serv {
+  #main-servicios .contenedor-mayor-icons .contenedor-icon-serv {
     display: flex;
     flex-direction: column;
     height: 210vh;
@@ -776,9 +887,5 @@ h5.titulos-de-proyectos {
     align-content: center;
   }
 }
-/*sobre-mi*/
-/*proyectos*/
-/*servicios*/
-/*contacto*/
 
 /*# sourceMappingURL=styles.css.map */
