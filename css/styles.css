@@ -595,9 +595,11 @@ nav #mobile {
 }
 .main-proyectos .proyect1 .imagenes-proyectos {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .main-proyectos .proyect1 .imagenes-proyectos img {
-  padding-left: 10px;
+  border-radius: 20px;
 }
 .main-proyectos .proyect2 {
   height: 100vh;
@@ -616,9 +618,11 @@ nav #mobile {
 }
 .main-proyectos .proyect2 .imagenes-proyectos {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .main-proyectos .proyect2 .imagenes-proyectos img {
-  padding-left: 10px;
+  border-radius: 20px;
 }
 .main-proyectos .proyect3 {
   height: 100vh;
@@ -636,9 +640,11 @@ nav #mobile {
 }
 .main-proyectos .proyect3 .imagenes-proyectos {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .main-proyectos .proyect3 .imagenes-proyectos img {
-  padding-left: 10px;
+  border-radius: 20px;
 }
 .main-proyectos .proyect4 {
   height: 100vh;
@@ -656,9 +662,11 @@ nav #mobile {
 }
 .main-proyectos .proyect4 .imagenes-proyectos {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .main-proyectos .proyect4 .imagenes-proyectos img {
-  padding-left: 10px;
+  border-radius: 20px;
 }
 .main-proyectos .proyect5 {
   height: 100vh;
@@ -676,9 +684,11 @@ nav #mobile {
 }
 .main-proyectos .proyect5 .imagenes-proyectos {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .main-proyectos .proyect5 .imagenes-proyectos img {
-  padding-left: 10px;
+  border-radius: 20px;
 }
 
 @media (max-width: 927px) {
@@ -965,6 +975,37 @@ nav #mobile {
     width: 30%;
     justify-content: space-evenly;
     align-content: center;
+  }
+}
+@media (max-width: 400px) {
+  main #presentacion .txt-presentacion .h2-presentacion {
+    font-size: 20px;
+  }
+  main #banner .contenedor-boton-banner {
+    width: 120px;
+  }
+  .main-sobremi .educacion-habilidades {
+    padding-top: 50px;
+  }
+  .main-contacto .contenedor-flex .formulario {
+    width: 400px;
+  }
+  .main-contacto .contenedor-flex p {
+    max-width: 300px;
+  }
+  .main-contacto .contenedor-flex .formulario .form input.campo {
+    width: 300px;
+    padding-left: 8px;
+  }
+  .main-contacto .contenedor-flex .formulario .form textarea.campo {
+    width: 300px;
+    padding-left: 8px;
+  }
+  .main-contacto .contenedor-flex .formulario .boton-enviar {
+    width: 250px;
+  }
+  .main-proyectos .proyect1 .imagenes-proyectos img {
+    width: 300 !important;
   }
 }
 

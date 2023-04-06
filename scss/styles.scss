@@ -689,8 +689,10 @@ nav #mobile{
         }
         .imagenes-proyectos{
             display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
             img{
-                padding-left: 10px;
+                border-radius: 20px;
             }
         }
     }
@@ -710,8 +712,10 @@ nav #mobile{
         }
         .imagenes-proyectos{
             display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
             img{
-                padding-left: 10px;
+                border-radius: 20px;
             }
         }
     }
@@ -731,8 +735,10 @@ nav #mobile{
         }
         .imagenes-proyectos{
             display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
             img{
-                padding-left: 10px;
+                border-radius: 20px;
             }
         }
     }
@@ -752,8 +758,10 @@ nav #mobile{
         }
         .imagenes-proyectos{
             display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
             img{
-                padding-left: 10px;
+                border-radius: 20px;
             }
         }
     }
@@ -773,8 +781,10 @@ nav #mobile{
         }
         .imagenes-proyectos{
             display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
             img{
-                padding-left: 10px;
+                border-radius: 20px;
             }
         }
     }
@@ -1158,16 +1168,36 @@ nav #mobile{
         align-content: center;
     }
 }
-@media (max-width: 640px){
-    .main-proyectos .proyect1 .imagenes-proyectos img {
-        padding-left: 10px;
-        width: 320;
-        height: 250;
+@media (max-width: 400px){
+    // .main-sobremi .sobremi-presentacion{
+    //     height:60vh;
+    // }
+    main #presentacion .txt-presentacion .h2-presentacion {
+        font-size: 20px;}
+        main #banner .contenedor-boton-banner{
+            width: 120px;
+        }
+    .main-sobremi .educacion-habilidades{
+        padding-top: 50px;
+    }
+    .main-contacto .contenedor-flex .formulario{
+        width: 400px;
+    }
+    .main-contacto .contenedor-flex p{
+        max-width: 300px;
     }
     .main-contacto .contenedor-flex .formulario .form input.campo{
         width: 300px;
+        padding-left: 8px;
     }
     .main-contacto .contenedor-flex .formulario .form textarea.campo{
         width: 300px;
+        padding-left: 8px;
+    }
+    .main-contacto .contenedor-flex .formulario .boton-enviar {
+        width: 250px;
+    }
+    .main-proyectos .proyect1 .imagenes-proyectos img{
+        width: 300 !important;
     }
 }
