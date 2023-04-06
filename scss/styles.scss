@@ -1158,4 +1158,16 @@ nav #mobile{
         align-content: center;
     }
 }
-
+@media (max-width: 640px){
+    .main-proyectos .proyect1 .imagenes-proyectos img {
+        padding-left: 10px;
+        width: 320;
+        height: 250;
+    }
+    .main-contacto .contenedor-flex .formulario .form input.campo{
+        width: 300px;
+    }
+    .main-contacto .contenedor-flex .formulario .form textarea.campo{
+        width: 300px;
+    }
+}
